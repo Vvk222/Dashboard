@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 p-5 bg-white shadow-md">
+            <h2 class="text-xl font-bold">Dashboard</h2>
+            <ul class="mt-4 space-y-2">
+                <li class="p-2 rounded cursor-pointer hover:bg-gray-200">Home</li>
+                <li class="p-2 rounded cursor-pointer hover:bg-gray-200">Orders</li>
+                <li class="p-2 rounded cursor-pointer hover:bg-gray-200">Products</li>
+                <li class="p-2 rounded cursor-pointer hover:bg-gray-200">Customers</li>
+                <li class="p-2 rounded cursor-pointer hover:bg-gray-200">Settings</li>
+            </ul>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <h1 class="mb-4 text-2xl font-semibold">Ecommerce Dashboard</h1>
+            
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Total Sales</h3>
+                    <p class="mt-2 text-2xl font-bold">40000000rs</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Total Orders</h3>
+                    <p class="mt-2 text-2xl font-bold">1,230</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold">Customers</h3>
+                    <p class="mt-2 text-2xl font-bold">980</p>
+                </div>
+            </div>
+            
+            <!-- Recent Orders -->
+            <div class="p-6 mt-6 bg-white rounded-lg shadow-md">
+                <h2 class="mb-4 text-xl font-semibold">Recent Orders</h2>
+                <table class="w-full text-left">
+                    <thead>
+                        <tr>
+                            <th class="p-2">Order ID</th>
+                            <th class="p-2">Customer</th>
+                            <th class="p-2">Amount</th>
+                            <th class="p-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-t">
+                            <td class="p-2">#12345</td>
+                            <td class="p-2">Dhagiya Krish</td>
+                            <td class="p-2">50000rs</td>
+                            <td class="p-2 text-green-500">Completed</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-2">#12346</td>
+                            <td class="p-2">Babaria Kunal</td>
+                            <td class="p-2">20000rs</td>
+                            <td class="p-2 text-yellow-500">Pending</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-2">#12347</td>
+                            <td class="p-2">Rajput Chandravadan</td>
+                            <td class="p-2">75000rs</td>
+                            <td class="p-2 text-red-500">Cancelled</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
